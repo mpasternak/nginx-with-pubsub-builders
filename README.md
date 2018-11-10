@@ -1,2 +1,4 @@
 # nginx-with-pubsub-builders
-Dockerfiles for building nginx packages with pubsub module enabled
+Build nginx debs with nginx-push-stream-module https://github.com/wandenberg/nginx-push-stream-module
+
+Dockerfiles and Makefiles
