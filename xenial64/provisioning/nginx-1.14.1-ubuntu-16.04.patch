@@ -1,18 +1,16 @@
 diff -ur nginx-1.14.1.orig/debian/changelog nginx-1.14.1/debian/changelog
 --- nginx-1.14.1.orig/debian/changelog	2018-11-10 20:35:09.959052000 +0000
 +++ nginx-1.14.1/debian/changelog	2018-11-10 20:37:40.570719000 +0000
-@@ -1,5 +1,11 @@
+@@ -1,3 +1,9 @@
++nginx (1.14.1-0+xenial0+pushstream0) xenial; urgency=medium
++
++  * Upload for xenial
++
++ -- Michal Pasternak <michal.dtz@gmail.com>  Sat, 10 Nov 2018 21:58:00 +0100
++
  nginx (1.14.1-0+xenial0) xenial; urgency=medium
 
-+  * new upstream release (1.14.1) upload for xenial
-+
-+ -- Michal Pasternak <michal.dtz@gmail.com>  Sat, 10 Nov 2018 21:37:00 +0100
-+
-+nginx (1.14.1-0+xenial0) xenial; urgency=medium
-+
    * New upstream release (1.14.1) containing bugfixes and security updates.
-   * Upload for xenial
-
 diff -ur nginx-1.14.1.orig/debian/rules nginx-1.14.1/debian/rules
 --- nginx-1.14.1.orig/debian/rules	2018-11-10 20:35:09.989052000 +0000
 +++ nginx-1.14.1/debian/rules	2018-11-10 20:36:29.827711000 +0000
