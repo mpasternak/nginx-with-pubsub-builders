@@ -2,7 +2,8 @@
 
 export NGINX_VERSION=1.12.2
 export UBUNTU_VERSION=14.04
-export PKGNAME=nginx_$NGINX_VERSION-0+trusty0_source.changes
+export VERSION_SUFFIX=0+trusty0+pushstream0
+export PKGNAME=nginx_$NGINX_VERSION-$VERSION_SUFFIX\_source.changes
 
 patch -p0 < /nginx-$NGINX_VERSION-ubuntu-$UBUNTU_VERSION.patch
 
