@@ -1,5 +1,4 @@
 CONTAINER=nginx_builder_xenial
-NGINX_VERISON=1.14.1
 
 all: build nginx
 

@@ -1,5 +1,4 @@
 CONTAINER=nginx_builder_bionic
-NGINX_VERISON=1.12.2
 
 all: build nginx
 
