@@ -10,10 +10,6 @@ cd nginx-$NGINX_VERSION
 
 debuild -S -sa
 
-mkdir -p /vagrant/debs
-
-cp /home/vagrant/*.deb /vagrant/debs
-
 cd ..
 
 debsign $PKGNAME
