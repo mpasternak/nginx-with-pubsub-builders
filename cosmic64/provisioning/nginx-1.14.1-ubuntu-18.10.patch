@@ -1,0 +1,26 @@
+diff -ur nginx-1.14.1.orig/debian/changelog nginx-1.14.1/debian/changelog
+--- nginx-1.14.1.orig/debian/changelog	2018-11-10 20:35:09.959052000 +0000
++++ nginx-1.14.1/debian/changelog	2018-11-10 20:37:40.570719000 +0000
+@@ -1,1 +1,7 @@
++nginx (1.14.1-0+cosmic0+pushstream0) cosmic; urgency=medium
++
++  * Upload for cosmic
++
++ -- Michal Pasternak <michal.dtz@gmail.com>  Sat, 10 Nov 2018 21:58:00 +0100
++
+ nginx (1.14.1-0+xenial0) xenial; urgency=medium
+
+   * New upstream release (1.14.1) containing bugfixes and security updates.
+diff -ur nginx-1.14.1.orig/debian/rules nginx-1.14.1/debian/rules
+--- nginx-1.14.1.orig/debian/rules	2018-11-10 20:35:09.989052000 +0000
++++ nginx-1.14.1/debian/rules	2018-11-10 20:36:29.827711000 +0000
+@@ -70,7 +70,8 @@
+ 			--with-http_v2_module \
+ 			--with-http_dav_module \
+ 			--with-http_slice_module \
+-			--with-threads
++			--with-threads \
++			--add-module=/nginx-push-stream-module/
+
+ light_configure_flags := \
+ 			$(common_configure_flags) \
