@@ -2,7 +2,7 @@ diff -ur nginx-1.14.1.orig/debian/changelog nginx-1.14.1/debian/changelog
 --- nginx-1.14.1.orig/debian/changelog	2018-11-10 20:35:09.959052000 +0000
 +++ nginx-1.14.1/debian/changelog	2018-11-10 20:37:40.570719000 +0000
 @@ -1,1 +1,7 @@
-+nginx (1.14.1-0+bionic0+pushstream0) bionic; urgency=medium
++nginx (1.14.1-0+bionic0+pushstream1) bionic; urgency=medium
 +
 +  * Upload for bionic
 +
@@ -20,7 +20,7 @@ diff -ur nginx-1.14.1.orig/debian/rules nginx-1.14.1/debian/rules
  			--with-http_slice_module \
 -			--with-threads
 +			--with-threads \
-+			--add-module=/nginx-push-stream-module/
++			--add-module=contrib/nginx-push-stream-module/
 
  light_configure_flags := \
  			$(common_configure_flags) \
